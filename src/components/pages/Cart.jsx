@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 export default function Cart() {
   const { cart } = useSelector((state) => state);
   const [totalAmount, setTotalAmount] = useState(0);
+
   useEffect(() => {
     setTotalAmount(cart.reduce((acc, curr) => acc + curr.price, 0));
   }, [cart]);
