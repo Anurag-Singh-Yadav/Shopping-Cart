@@ -9,7 +9,6 @@ export const CartSlices = createSlice({
         },
         remove:(state,actions)=>{
             return state.filter((item)=>item.id !== actions.payload);
-            
         }
     }
 });
