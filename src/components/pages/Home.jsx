@@ -22,11 +22,11 @@ export default function Home() {
     fetchData();
   }, []);
   return (
-    <div className="max-w-[100vw] w-11/12 mx-auto">
+    <div className="max-w-[100vw] w-11/12 mx-auto pt-4">
       {loading ? (
         <Spinnner></Spinnner>
       ) : post.length > 0 ? (
-        <div className="flex mx-auto p-2 flex-wrap">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-6 pt-5 ">
           {post.map((post) => (
             <Product key={post.id} post={post}></Product>
           ))}
