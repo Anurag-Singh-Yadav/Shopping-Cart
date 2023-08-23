@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className='flex justify-between w-11/12 mx-auto items-center p-1'>
         <NavLink to='/'>
         <div className='w-[190px] p-2 mx-3'>
-          <img src='https://codehelp-shopping-cart.netlify.app/logo.png' alt='this'></img>
+          <img src='/mylogo2.png' alt='this'></img>
         </div>
         </NavLink>
         
