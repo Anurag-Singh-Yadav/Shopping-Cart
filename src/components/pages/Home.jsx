@@ -23,8 +23,8 @@ export default function Home() {
   }, []);
   return (
     <div className="max-w-[100vw] w-11/12 mx-auto pt-4 relative top-16">
-      {loading ? (
-        <Spinnner></Spinnner>
+      {!loading ? (
+        <div className="flex justify-center items-center h-[10rem]"><Spinnner></Spinnner></div>
       ) : post.length > 0 ? (
         <div className="grid grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-6 pt-5">
           {post.map((post) => (
