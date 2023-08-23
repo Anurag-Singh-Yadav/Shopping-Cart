@@ -9,7 +9,7 @@ export default function Product({ post }) {
 
   function removeToCart() {
     dispatch(remove(post.id));
-    // toast.warning("Item removed successfully");
+    toast.warning("Item removed successfully");
   }
 
   function addToCart() {

@@ -12,9 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Provider store={Store}>
-      <App>
-        <ToastContainer />
-      </App>
+    <ToastContainer
+    position="top-center" 
+    autoClose={1000} // Adjust other options as needed
+    />
+      <App></App>
     </Provider>
   </BrowserRouter>
 );

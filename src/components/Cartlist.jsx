@@ -2,11 +2,12 @@ import React from 'react'
 import{ AiTwotoneDelete }from 'react-icons/ai'
 import { remove } from "./redux/slices/CartSlices";
 import { useDispatch } from 'react-redux';
+import { toast } from "react-toastify";
 export default function Cartlist({key,item}) {
     const dispatch = useDispatch();
     function removeToCart() {
         dispatch(remove(item.id));
-        // toast.warning("Item removed successfully");
+        toast.warning("Item removed successfully");
       }
       let disc =item.description.substr(0,83);
   return (
