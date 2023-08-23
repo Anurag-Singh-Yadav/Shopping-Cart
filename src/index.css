@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (max-width: 768px) {
+    .main-cart-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .summary {
+        width: 100%;
+        position: relative;
+        margin-top:0 ;
+        justify-content: center;
+    }
+    .cartlist{
+        gap: 2rem;
+    }
+    .summary{
+        justify-content: center;
+    }
+    
+
+}

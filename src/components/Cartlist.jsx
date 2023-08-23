@@ -10,7 +10,7 @@ export default function Cartlist({key,item}) {
       }
       let disc =item.description.substr(0,83);
   return (
-    <div className='flex items-center p-3 gap-2 md:p-5 justify-between border-b-2 border-slate-500 mt-2 mb-2 md:mx-5'>
+    <div className='flex cartlist items-center p-3 gap-2 justify-between border-b-2 border-slate-500 mt-2 mb-2 md:mx-5'>
       <div className='w-[35%]'><img src={item.image} className='m-2 object-cover' alt=''></img></div>
       <div className='md:ml-10 self-start space-y-5 w-[100%] md:w-[70%]'>
         <div className='text-2xl font-bold mb-3 pt-4'>{item.title}</div>
